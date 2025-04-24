@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Me</title>
+  <title>Portfolio - Tahmid Ahmed</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
@@ -71,6 +71,7 @@
     }
 
     .hero {
+      margin-top: 20px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -84,6 +85,7 @@
     .hero-text {
       max-width: 600px;
       z-index: 2;
+      margin-bottom: 200px;
     }
 
     .intro {
@@ -171,10 +173,8 @@
       object-fit: cover;
       box-shadow: none;
       background: transparent;
-      /* Remove border-radius for square look, add if you want circle */
     }
 
-    /* Overlay black gradient on left side for text readability */
     .hero::before {
       content: "";
       position: absolute;
@@ -190,18 +190,17 @@
         border-radius: 50%;
       }
       
-    /* កែប្រែ CSS ដោយប្រើ flex-direction: column-reverse */
 @media (max-width: 1100px) {
     .hero {
-      flex-direction: column-reverse; /* ប្តូរពី column ទៅ column-reverse */
+      flex-direction: column-reverse;
       text-align: center;
       padding: 40px 10vw 0 10vw;
       gap: 30px;
     }
     .hero-img {
       justify-content: center;
-      margin-top: 0; /* កែពី margin-top: 30px ទៅ 0 */
-      margin-bottom: 30px; /* បន្ថែម margin-bottom */
+      margin-top: 0;
+      margin-bottom: 30px;
     }
     .hero-img img {
       width: 280px;
@@ -221,11 +220,11 @@
       gap: 18px;
     }
     .hero {
-      flex-direction: column-reverse; /* ប្តូរទៅ column-reverse */
+      flex-direction: column-reverse;
       padding: 20px 6vw 0 6vw;
     }
     .hero-img {
-      margin-bottom: 20px; /* បន្ថែម margin-bottom */
+      margin-bottom: 20px;
       margin-top: 0;
     }
     .hero-img img {
@@ -246,11 +245,11 @@
   
   @media (max-width: 500px) {
     .hero {
-      flex-direction: column-reverse; /* ប្តូរទៅ column-reverse */
+      flex-direction: column-reverse;
       padding: 10px 2vw 0 2vw;
     }
     .hero-img {
-      margin-bottom: 15px; /* បន្ថែម margin-bottom */
+      margin-bottom: 15px;
     }
     .hero-img img {
       width: 120px;
@@ -268,8 +267,8 @@
       <ul>
         <li>Home</li>
         <li><a href="About_Us.html" style="color:inherit;text-decoration:none;">About Us</a></li>
-        <li>Services</li>
-        <li>Skills</li>
+        <li><a href="Services.html" style="color:inherit;text-decoration:none;">Services</a></li>
+        <li><a href="Skills.html" style="color:inherit;text-decoration:none;">Skills</a></li>
         <li><a href="Contact_Us.html" style="color:inherit;text-decoration:none;">Contact Us</a></li>
       </ul>
       <button class="subscribe">Subscribe</button>
